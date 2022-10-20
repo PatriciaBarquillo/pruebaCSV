@@ -7,7 +7,7 @@ public class LectorCSV {
 
     public void leeCSV (String nombreArchivo){
         try{
-            CSVReader csvReader = new CSVReader(new FileReader(nombreArchivo));
+            CSVReader csvReader = new CSVReader(new FileReader(nombreArchivo)); // leer fichero
             String [] fila = null;
             while ((fila=csvReader.readNext())!=null){
                 System.out.println(fila[0]
